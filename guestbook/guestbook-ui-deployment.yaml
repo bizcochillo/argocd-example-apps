@@ -14,7 +14,12 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-        - image: quay.io/redhattraining/guestbook-frontend:v1
+        - image: ghcr.io/stefanprodan/podinfo:6.6.0
           name: guestbook-ui
           ports:
-            - containerPort: 8080
+            - containerPort: 9898
+          env:
+            - name: PODINFO_UI_COLOR
+              value: "#393939"
+            - name: PODINFO_UI_MESSAGE
+              value: "ArgoCD Demo"
