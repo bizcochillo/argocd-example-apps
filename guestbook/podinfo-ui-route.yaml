@@ -1,12 +1,12 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: frontend-demo
+  name: podinfo-ui
   namespace: guestbook
 spec:
   to:
     kind: Service
-    name: frontend-demo
+    name:  guestbook-ui
     weight: 100
   port:
     targetPort: http
