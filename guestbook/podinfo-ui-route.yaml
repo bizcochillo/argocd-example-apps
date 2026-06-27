@@ -6,9 +6,9 @@ metadata:
 spec:
   to:
     kind: Service
-    name:  guestbook-ui
+    name:  podinfo-ui
     weight: 100
   port:
-    targetPort: http
+    targetPort: 9898
   tls:
     termination: edge
