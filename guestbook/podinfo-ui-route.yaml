@@ -1,8 +1,7 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: podinfo-ui
-  namespace: guestbook
+  name: podinfo-ui  
 spec:
   to:
     kind: Service
