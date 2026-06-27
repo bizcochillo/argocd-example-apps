@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: podinfo-ui
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: guestbook-ui
+      app: podinfo-ui
   template:
     metadata:
       labels:
-        app: guestbook-ui
+        app: podinfo-ui
     spec:
       containers:
         - image: ghcr.io/stefanprodan/podinfo:6.6.0
